@@ -11,6 +11,10 @@ app.set('view engine','pug');
 app.set('views','./views');
 
 
+//Public folder
+
+app.set( express.static('public') );
+
 //Routing
  app.get('/auth/register',registerForm ); 
  app.get('/auth/login',loginForm)
